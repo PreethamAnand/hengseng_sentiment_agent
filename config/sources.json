@@ -1,0 +1,31 @@
+{
+  "naver": {
+    "actor_id": "apify/cheerio-scraper",
+    "kind": "naver_board",
+    "pages": 30,
+    "tz": "Asia/Seoul"
+  },
+  "telegram": {
+    "actor_id": "lofomachines/telegram-keyword-search-scraper",
+    "kind": "generic",
+    "tz": "UTC",
+    "input_template": {
+      "mode": "keyword",
+      "keywords": "{queries}",
+      "maxResultsPerKeyword": 20,
+      "afterDate": "{since}"
+    }
+  },
+  "lihkg": {
+    "actor_id": "",
+    "kind": "generic",
+    "tz": "Asia/Hong_Kong",
+    "input_template": {"searchTerms": "{queries}", "maxItems": "{max_items}", "dateFrom": "{since}"}
+  },
+  "futu": {
+    "actor_id": "",
+    "kind": "generic",
+    "tz": "Asia/Hong_Kong",
+    "input_template": {"searchTerms": "{queries}", "maxItems": "{max_items}", "dateFrom": "{since}"}
+  }
+}
